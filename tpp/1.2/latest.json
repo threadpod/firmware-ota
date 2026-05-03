@@ -3,13 +3,13 @@
   "hw_rev": "1.2",
   "channel": "latest",
   "version": "1.1.1-dev",
-  "build": 377,
+  "build": 378,
   "date": "2026-05-03",
   "url": "https://github.com/threadpod/ota/releases/download/tpp-nightly/tpp-1.2-ota.bin",
-  "size": 1350224,
-  "sha256": "e50ac0c767a7d829e775f6fc6819972d485394a004d2a9ae224b25b0bdb79607",
-  "sig_ecdsa_p256": "714ebbee9b654968dbefdefcea14fa3854278c4663ddcad37aafe38bbf4ee8a890f5465f3f5c281b7eb2d22a51318caeaa890858ac607ec128150f1f1eb6447a",
+  "size": 1362064,
+  "sha256": "09c860dd49ebcef310d127da5116949b128872a05e709721db89abde1e07505e",
+  "sig_ecdsa_p256": "61a34e507a5faaaa473bd055e2d6b4135c3af948bff71a984291ac98529bfc73c0ac8aed482e635dcc016b60c1491aa63ac1c8a626b48ec1c5413e95938d4bc8",
   "min_version": "1.0.0",
   "rollout_percent": 100,
-  "notes": "716e432"
+  "notes": "5d43991"
 }
