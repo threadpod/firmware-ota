@@ -3,13 +3,13 @@
   "hw_rev": "1.1",
   "channel": "latest",
   "version": "1.1.1-dev",
-  "build": 406,
+  "build": 407,
   "date": "2026-05-04",
   "url": "https://github.com/threadpod/ota/releases/download/tpd-nightly/tpd-1.1-ota.bin",
-  "size": 1396576,
-  "sha256": "4ece018a3306b0e1890523f29b5103f7e488a4bfeb2a3a6e3fb35d4f90652bb1",
-  "sig_ecdsa_p256": "6f2630bfd0797b4924cf43aea79a2cd153d07bfe7451a5ddecd4099f4d56c77d8d0284d0643b0be99162854278e9a31b7de88df85bd3b0d3016be741a76d8105",
+  "size": 1396880,
+  "sha256": "fe230a4543c90a783f8e7672e3a4003a4b419f8fb8ccde1cb527d2383c5e4107",
+  "sig_ecdsa_p256": "cff4cb79a27edafd2fd3fede80afd390a1b529bc9435140ebf4e06e0af7cf0c2211191153b9470952a76648928e7403f96954d5e1672b698bb7bf1a6e434a456",
   "min_version": "1.0.0",
   "rollout_percent": 100,
-  "notes": "d91a995"
+  "notes": "d8bdf1d"
 }
