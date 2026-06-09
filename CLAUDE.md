@@ -38,6 +38,8 @@ En cas de doute sur l'étendue de l'autorisation : **s'arrêter et demander**, n
 
 Cette règle **prime sur** la « Définition de Terminé » ci-dessus : sur une issue STOP, la clôture automatique (merge, suppression de branche, fermeture d'issue, déploiement, ressources d'org) n'a lieu **qu'avec** une autorisation explicite ; sinon, s'arrêter à la PR.
 
+**Choix multiples sans recommandation** : face à plusieurs options viables (A/B/C…) sans recommandation claire, NE PAS trancher seul — **STOP**, présenter les options avec leurs trade-offs, et attendre le choix de Nicolas. S'il existe une recommandation explicite, l'appliquer et continuer sans demander. (Garde-fou important en mode `auto`, qui pousse sinon à poursuivre sans poser de question.)
+
 ## Spécifique firmware-ota
 - Repo PUBLIC (distribution OTA + GitHub Pages).
 - Binaires firmware volumineux → GitHub Releases, pas dans le repo.
