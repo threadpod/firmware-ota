@@ -15,6 +15,7 @@
 
 ## Routing des issues
 - firmware / infra → `dev` · business / ops → `internal` · code Hub MCP → `tools` · OTA public → `firmware-ota`.
+- **Référencer une issue = toujours `repo#numéro`** (`internal#278`, `dev#341`), jamais `#278` seul : les numéros sont propres à chaque repo et se chevauchent (un `#278` existe sur `dev` ET sur `internal`). S'applique partout — commits, issues, PR, wiki, commentaires — et pour lancer Claude Code : `claude "issue internal#278"`.
 
 ## Wiki
 - Dès que tu modifies le wiki de ce repo, applique la doctrine du `CLAUDE.md` du wiki.
