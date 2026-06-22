@@ -1,0 +1,23 @@
+{
+  "module": "tpd",
+  "hw_rev": "2.0",
+  "idf_major": 5,
+  "channel": "latest",
+  "version": "1.3.774-202606221444",
+  "build": 774,
+  "softwareVersion": 774,
+  "softwareVersionString": "1.3.774-202606221444",
+  "date": "2026-06-22",
+  "url": "https://github.com/threadpod/firmware-ota/releases/download/tpd-nightly/tpd-2.0-idf5-ota.bin",
+  "imageUrl": "https://github.com/threadpod/firmware-ota/releases/download/tpd-nightly/tpd-2.0-idf5-ota.bin",
+  "size": 1521648,
+  "sha256": "d61d3dc42c5394877a718d580daee500241efe18048a7cdaf37375a842f4f35f",
+  "sig_ecdsa_p256": "63add6433852a1e82c6916af57804d9b2483716fb6c9893f2c3ece4cc2f0707e60335332b023cd343f2cd26e2baae1046346c15bd5dcdb1fcc438ffd3ec9bb61",
+  "min_version": "1.0.0",
+  "minApplicableSoftwareVersion": 0,
+  "rollout_percent": 100,
+  "notes": "9f63bc6",
+  "full_url": "https://github.com/threadpod/firmware-ota/releases/download/tpd-nightly/tpd-2.0-idf5-full.bin",
+  "full_sha256": "97eb12df5810634c5922a7b023f2d422dd98f0cf89c32aed1e309dddd6b56ac5",
+  "full_size": 1652720
+}
