@@ -33,6 +33,8 @@
 ## Issues STOP & autorisations
 Par défaut, une issue contenant une section **STOP** s'arrête à l'**ouverture de la PR** : NE PAS merger, NE PAS clore l'issue, NE PAS déployer, NE PAS créer/modifier de **ressource d'organisation** (webhook, ruleset, secret, team, repo, bucket lock).
 
+La PR s'ouvre **ready for review**, jamais en draft : le STOP tient au non-merge (réservé à Nicolas), pas à l'état draft — une PR draft n'est pas mergeable (405) et force un contournement fermer/recréer (internal#354).
+
 Ces gestes sont **réservés à Nicolas** — **SAUF** si le prompt de lancement (ou un message explicite de Nicolas) autorise nommément à aller au-delà (ex. « merge et clôture », « déploie », « fais tout ce que tu peux à ma place »). L'autorisation explicite **lève le STOP pour les gestes nommés**.
 
 En cas de doute sur l'étendue de l'autorisation : **s'arrêter et demander**, ne jamais présumer.
