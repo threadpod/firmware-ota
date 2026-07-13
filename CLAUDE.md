@@ -20,6 +20,7 @@
 ## Wiki
 - Dès que tu modifies le wiki de ce repo, applique la doctrine du `CLAUDE.md` du wiki.
 - Rappels : reflète l'état présent uniquement · footer obligatoire sur chaque page · SVG only · pages `Research-*` éphémères et hors `_Sidebar`.
+- **Wiki plat** : tout fichier (factures, PDF, SVG, PNG, JPG) **à la racine**, référencé par **nom nu** (`![alt](fichier.svg)`, `[PDF](fichier.pdf)`). **Jamais de sous-dossier** — un wiki GitHub est plat, un lien `dossier/x.pdf` est interprété comme une page wiki inexistante → 404 (cf. internal#278).
 
 ## Définition de « Terminé » — clôture systématique de chaque issue
 À la fin de TOUTE issue, sans demande explicite :
