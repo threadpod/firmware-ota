@@ -1,0 +1,23 @@
+{
+  "module": "tpc",
+  "hw_rev": "1.0",
+  "idf_major": 6,
+  "channel": "latest",
+  "version": "1.7.1778-202610232321",
+  "build": 1778,
+  "softwareVersion": 1778,
+  "softwareVersionString": "1.7.1778-202610232321",
+  "date": "2026-10-23",
+  "url": "https://github.com/threadpod/firmware-ota/releases/download/tpc-1.0-nightly/tpc-1.0-idf6-ota.bin",
+  "imageUrl": "https://github.com/threadpod/firmware-ota/releases/download/tpc-1.0-nightly/tpc-1.0-idf6-ota.bin",
+  "size": 2980512,
+  "sha256": "86afd62fb46607d8590e49b92c2493f4f65792f32c33462f9fb32cdb7f0d9995",
+  "sig_ecdsa_p256": "a79266244f078ce7587f77b013c7b961a3ff6a517b343f6ced437c22f30dd652e9456e1f207991c9f017bdf419ac0d1fd24d3630d5fae6ec8f0ce3d7ca371b82",
+  "min_version": "1.0.0",
+  "minApplicableSoftwareVersion": 0,
+  "rollout_percent": 100,
+  "notes": "2c149d8",
+  "full_url": "https://github.com/threadpod/firmware-ota/releases/download/tpc-1.0-nightly/tpc-1.0-idf6-full.bin",
+  "full_sha256": "ccc11db7a611e962c6bc75e2623e1a4d83c1d6fd38e8fd86ea75b55d465e4b69",
+  "full_size": 3373728
+}
