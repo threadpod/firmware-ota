@@ -1,49 +1,53 @@
 # ThreadPod OTA
 
-Distribution des mises à jour firmware signées pour les modules ThreadPod
-(TPD, TPP, TPG, TPH, TPS).
+Distribution des mises à jour firmware signées de ThreadPod OS. Un seul
+binaire par classe de carte mère `tpc` (0.1, 0.2, 1.0), quelle que soit la
+carte fille du module.
 
 ## Comment ça marche
 
-Chaque module embarque un client OTA qui, sur demande de l'utilisateur depuis
-le dashboard, interroge le manifest de son channel actif :
+Chaque module embarque un client OTA qui interroge le manifest de sa classe
+de carte mère et de son channel actif, servi par GitHub Pages (branche
+`gh-pages`) :
 
 ```
-https://threadpod.github.io/ota/<code>/<channel>.json
+https://ota.threadpod.net/tpc/<rev>/<channel>.json
 ```
 
 Exemples :
-- `https://threadpod.github.io/ota/tpd/stable.json`
-- `https://threadpod.github.io/ota/tph/latest.json`
+- `https://ota.threadpod.net/tpc/0.1/latest.json`
+- `https://ota.threadpod.net/tpc/1.0/latest.json`
 
 Si une version plus récente est disponible **et** que le module est dans la
 fenêtre de rollout, il télécharge le binaire depuis la GitHub Release
-correspondante, vérifie SHA-256 puis **signature ECDSA P-256** avant
+correspondante (`tpc-<rev>-nightly` pour `latest`), vérifie SHA-256 puis **signature ECDSA P-256** avant
 commutation de partition.
 
 ## Channels
 
 | Channel | Usage |
 | --- | --- |
-| `stable` | Par défaut pour tous les modules en production. Tag `<code>-vX.Y.Z`. |
-| `latest` | Nightlies / beta. Optionnel, activable depuis le dashboard. Prerelease. |
+| `stable` | Production. Aucune stable `tpc` n'est publiée à ce jour : `tpc/<rev>/stable.json` répond 404. |
+| `latest` | Nightlies, release rolling `tpc-<rev>-nightly` (prerelease). |
 
 ## Format du manifest
 
 ```json
 {
-  "module":          "tpd",
-  "channel":         "stable",
-  "version":         "1.0.6",
-  "build":           48,
-  "date":            "2026-04-20",
-  "url":             "https://github.com/threadpod/ota/releases/download/tpd-v1.0.6/tpd.bin",
-  "size":            1398272,
-  "sha256":          "f3a1b2…",
-  "sig_ecdsa_p256":  "3045022100…",
+  "module":          "tpc",
+  "hw_rev":          "0.2",
+  "idf_major":       6,
+  "channel":         "latest",
+  "version":         "1.7.1798-202610251541",
+  "build":           1798,
+  "url":             "https://github.com/threadpod/firmware-ota/releases/download/tpc-0.2-nightly/tpc-0.2-idf6-ota.bin",
+  "size":            2985408,
+  "sha256":          "ae950cbf…",
+  "sig_ecdsa_p256":  "66f7c4f5…",
   "min_version":     "1.0.0",
   "rollout_percent": 100,
-  "notes":           "WS2812 v2, QA script expand"
+  "notes":           "0a61dc3",
+  "full_url":        "https://github.com/threadpod/firmware-ota/releases/download/tpc-0.2-nightly/tpc-0.2-idf6-full.bin"
 }
 ```
 
