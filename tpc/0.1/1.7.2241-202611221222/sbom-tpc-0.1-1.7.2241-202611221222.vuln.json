@@ -1,0 +1,1291 @@
+{
+  "schema": "vulns@1",
+  "projet": "project-threadpod-tpc",
+  "version": "1.7.2241-202611221222",
+  "canal": "latest",
+  "date": "2026-11-22T11:46:06Z",
+  "verdict": "conforme",
+  "paquets": 87,
+  "sources": {
+    "nvd": {
+      "base": "NATIONAL VULNERABILITY DATABASE MIRROR (https://github.com/espressif/esp-nvd-mirror.git@5619372a9324288a8bbeec17b0fa4886ad0f5287)",
+      "erreur": null
+    },
+    "osv": {
+      "commits": 14,
+      "erreur": null
+    }
+  },
+  "a_evaluer": [],
+  "evalues": [
+    {
+      "vulnerabilite": "CVE-2026-16554",
+      "ids": [
+        "CVE-2026-16554"
+      ],
+      "composant": "cJSON",
+      "version": "1.7.19",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "7.8",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-16554",
+      "exclu_amont": "",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-16554",
+        "composant": "cJSON",
+        "version": "1.7.19",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "print_string_ptr() et cJSON_PrintBuffered() sont rejetés à l'édition des liens ; il faudrait de plus environ 858 millions de caractères de contrôle, hors de la RAM du module",
+        "issue": "dev#4992",
+        "date": "2026-11-20"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-67215",
+      "ids": [
+        "CVE-2026-67215"
+      ],
+      "composant": "cJSON",
+      "version": "1.7.19",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "8.7",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-67215",
+      "exclu_amont": "",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-67215",
+        "composant": "cJSON",
+        "version": "1.7.19",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "cJSONUtils_ApplyPatches() vit dans cJSON_Utils.c, qu'aucune archive liée ne contient",
+        "issue": "dev#4992",
+        "date": "2026-11-20"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-67216",
+      "ids": [
+        "CVE-2026-67216"
+      ],
+      "composant": "cJSON",
+      "version": "1.7.19",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "7.5",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-67216",
+      "exclu_amont": "",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-67216",
+        "composant": "cJSON",
+        "version": "1.7.19",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "cJSON_Compare() n'est appelé par aucun code du binaire ; sa section est rejetée à l'édition des liens",
+        "issue": "dev#4992",
+        "date": "2026-11-20"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-67217",
+      "ids": [
+        "CVE-2026-67217"
+      ],
+      "composant": "cJSON",
+      "version": "1.7.19",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "medium",
+      "score": "6.9",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-67217",
+      "exclu_amont": "",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-67217",
+        "composant": "cJSON",
+        "version": "1.7.19",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "apply_patch() vit dans cJSON_Utils.c, qu'aucune archive liée ne contient",
+        "issue": "dev#4992",
+        "date": "2026-11-20"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2024-28115",
+      "ids": [
+        "CVE-2024-28115"
+      ],
+      "composant": "freertos",
+      "version": "10.5.1",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "7.8",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2024-28115",
+      "exclu_amont": "Affects only ARMv7-M MPU ports, and ARMv8-M ports with Memory Protected Unit (MPU) support enabled",
+      "verdict": {
+        "vulnerabilite": "CVE-2024-28115",
+        "alias": [
+          "GHSA-xcv7-v92w-gq6r"
+        ],
+        "composant": "freertos",
+        "version": "10.5.1",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "Vise les portages ARMv7-M MPU et ARMv8-M avec configENABLE_MPU=1 ; l'ESP32-C6 compile le seul portage portable/riscv, sans MPU wrappers (portUSING_MPU_WRAPPERS=0)",
+        "issue": "dev#5088",
+        "date": "2026-11-21"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-77234",
+      "ids": [
+        "CVE-2026-77234"
+      ],
+      "composant": "freertos",
+      "version": "10.5.1",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "critical",
+      "score": "9.3",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-77234",
+      "exclu_amont": "A timer command submitted by an unprivileged task is executed by the timer service task as a caller-supplied function call. Affects only MPU-enabled ports (GHSA-w3vr-pr75-5hc6). ESP-IDF ships the xtensa, riscv and linux ports only, none of which set portUSING_MPU_WRAPPERS, so the MPU wrappers and the privilege boundary they enforce are not built. Same reasoning as CVE-2024-28115, already excluded in the FreeRTOS-Kernel manifest.",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-77234",
+        "alias": [
+          "GHSA-w3vr-pr75-5hc6"
+        ],
+        "composant": "freertos",
+        "version": "10.5.1",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
+        "motif": "Exige une tâche non privilégiée sous MPU wrappers ; portUSING_MPU_WRAPPERS=0 sur le portage RISC-V, et l'identifiant de commande des timers ne vient que des macros xTimer* du firmware",
+        "issue": "dev#5088",
+        "date": "2026-11-21"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-77235",
+      "ids": [
+        "CVE-2026-77235"
+      ],
+      "composant": "freertos",
+      "version": "10.5.1",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "8.3",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-77235",
+      "exclu_amont": "Missing privilege verification in the secure context cleanup SVC handler, letting a Non-Secure task free another task's secure context (GHSA-55pf-q87x-c58c). Affects ARMv8-M ports with TrustZone and MPU only. ESP-IDF ships the xtensa, riscv and linux ports only and carries no secure_context sources, so the affected code is not present.",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-77235",
+        "alias": [
+          "GHSA-55pf-q87x-c58c"
+        ],
+        "composant": "freertos",
+        "version": "10.5.1",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "SecureContext_FreeContext() vit dans le côté sécurisé des portages ARMv8-M TrustZone ; aucun fichier secure_context*.c n'est dans le composant freertos de l'IDF, l'ESP32-C6 compile portable/riscv",
+        "issue": "dev#5088",
+        "date": "2026-11-21"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-77236",
+      "ids": [
+        "CVE-2026-77236"
+      ],
+      "composant": "freertos",
+      "version": "10.5.1",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "8.3",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-77236",
+      "exclu_amont": "Missing minimum size validation in secure context allocation, writing the stack-overflow sentinel outside the allocated Secure-world buffer (GHSA-vq2f-9qj3-jj2m). Affects ARMv8-M ports with TrustZone only. ESP-IDF ships the xtensa, riscv and linux ports only and carries no secure_context sources, so the affected code is not present.",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-77236",
+        "alias": [
+          "GHSA-vq2f-9qj3-jj2m"
+        ],
+        "composant": "freertos",
+        "version": "10.5.1",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_not_present",
+        "motif": "SecureContext_AllocateContext() vit dans le côté sécurisé des portages ARMv8-M TrustZone ; aucun fichier secure_context*.c n'est dans le composant freertos de l'IDF, l'ESP32-C6 compile portable/riscv",
+        "issue": "dev#5088",
+        "date": "2026-11-21"
+      }
+    },
+    {
+      "vulnerabilite": "CVE-2026-77237",
+      "ids": [
+        "CVE-2026-77237"
+      ],
+      "composant": "freertos",
+      "version": "10.5.1",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "high",
+      "score": "8.4",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-77237",
+      "exclu_amont": "Missing queue-set type validation in xQueueAddToSet() leading to an out-of-bounds read in privileged kernel context. Affects only MPU-enabled ports with configUSE_QUEUE_SETS=1 (GHSA-9wvc-hqvx-5wf5). ESP-IDF ships the xtensa, riscv and linux ports only, none of which set portUSING_MPU_WRAPPERS, so there is no privileged/unprivileged split for the over-read to cross.",
+      "verdict": {
+        "vulnerabilite": "CVE-2026-77237",
+        "alias": [
+          "GHSA-9wvc-hqvx-5wf5"
+        ],
+        "composant": "freertos",
+        "version": "10.5.1",
+        "statut": "non_affecte",
+        "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
+        "motif": "Exige une tâche non privilégiée sous MPU wrappers ; portUSING_MPU_WRAPPERS=0 sur le portage RISC-V, et ThreadPod OS n'appelle pas xQueueAddToSet, dont le handle ne vient que du firmware",
+        "issue": "dev#5088",
+        "date": "2026-11-21"
+      }
+    }
+  ],
+  "exclues_amont": [
+    {
+      "vulnerabilite": "CVE-2025-27840",
+      "ids": [
+        "CVE-2025-27840"
+      ],
+      "composant": "esp-idf",
+      "version": "6.0.2",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "medium",
+      "score": "6.8",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-27840",
+      "exclu_amont": "A security issue was reported concerning undocumented HCI commands in ESP32 Bluetooth controller. Espressif had earlier clarified that these vendor HCI commands are primarily used for debugging purposes and pose no real, known security threat. Technical details were shared in this https://developer.espressif.com/blog/2025/03/esp32-bluetooth-clearing-the-air/"
+    },
+    {
+      "vulnerabilite": "CVE-2020-22283",
+      "ids": [
+        "CVE-2020-22283"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2020-22283",
+      "exclu_amont": "ICMPv6 out-of-bounds read (savannah #58553) in icmp6_send_response_with_addrs_and_netif(). Fixed upstream by commits 489405839ae0 and 488d4ad2460c (lwIP 2.1.3/2.2.0), further hardened by 2bf8fcd7c240; all present as ancestors in the vendored esp-lwip fork. NVD's CPE has no fixed-version boundary (\"git head\"), causing the version match."
+    },
+    {
+      "vulnerabilite": "CVE-2026-15340",
+      "ids": [
+        "CVE-2026-15340"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-15340",
+      "exclu_amont": "Overflow of tx_buf in smtp_prepare_auth_or_mail() of the lwIP SMTP client application (src/apps/smtp/smtp.c) when a server sends an AUTH line longer than SMTP_TX_BUF_LEN, fixed upstream by 614420f82c87 (ICSA-26-279-02). The advisory lists 2.2.1, but 2.1.3 and 2.2.0 have the same code. ESP-IDF does not build src/apps/smtp/smtp.c."
+    },
+    {
+      "vulnerabilite": "CVE-2026-87121",
+      "ids": [
+        "CVE-2026-87121"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-87121",
+      "exclu_amont": "Out-of-bounds write into client->rx_buffer in mqtt_parse_incoming() of the lwIP MQTT client application (src/apps/mqtt/mqtt.c), fixed upstream by 68b2c1191886 (ICSA-26-265-01). ESP-IDF does not build src/apps/mqtt/mqtt.c. Its MQTT client is the separate ESP-MQTT component."
+    },
+    {
+      "vulnerabilite": "CVE-2026-91018",
+      "ids": [
+        "CVE-2026-91018"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-91018",
+      "exclu_amont": "Double free of the input pbuf in lowpan6_input() of the lwIP 6LoWPAN netif (src/netif/lowpan6.c) when decompression of a FRAG1 fragment fails, fixed upstream by f873b6295933 (ICSA-26-265-02). ESP-IDF does not build src/netif/lowpan6.c or src/netif/lowpan6_common.c. Thread support uses the 6LoWPAN layer of OpenThread."
+    },
+    {
+      "vulnerabilite": "CVE-2025-27810",
+      "ids": [
+        "CVE-2025-27810"
+      ],
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-27810",
+      "exclu_amont": "Fixed in 3.6.3"
+    },
+    {
+      "vulnerabilite": "CVE-2025-52496",
+      "ids": [
+        "CVE-2025-52496"
+      ],
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-52496",
+      "exclu_amont": "Fixed in 3.6.4"
+    },
+    {
+      "vulnerabilite": "CVE-2025-54764",
+      "ids": [
+        "CVE-2025-54764"
+      ],
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-54764",
+      "exclu_amont": "Fixed in 3.6.5"
+    },
+    {
+      "vulnerabilite": "CVE-2025-59438",
+      "ids": [
+        "CVE-2025-59438"
+      ],
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-59438",
+      "exclu_amont": "Fixed in 3.6.5"
+    },
+    {
+      "vulnerabilite": "CVE-2025-66442",
+      "ids": [
+        "CVE-2025-66442"
+      ],
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "source": "nvd",
+      "certitude": "trouvee",
+      "severite": "inconnue",
+      "score": "",
+      "kev": false,
+      "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-66442",
+      "exclu_amont": "Applicable only with Clang with select-optimize feature. ESP-IDF uses gcc as the default compiler and uses -Os as the default optimisation flag"
+    }
+  ],
+  "sans_detection": [
+    {
+      "vulnerabilite": "CVE-2026-113783",
+      "alias": [
+        "GHSA-ch63-jxm5-vmvf"
+      ],
+      "composant": "esp-idf",
+      "version": "6.0.2",
+      "statut": "non_affecte",
+      "justification": "requires_configuration",
+      "motif": "Exposé seulement si CONFIG_LWIP_DNS_MAX_HOST_IP vaut 2 ou plus ; ThreadPod OS garde le défaut 1, la copie de dns_lookup() reste bornée à une entrée",
+      "issue": "dev#4156",
+      "date": "2026-10-30"
+    },
+    {
+      "vulnerabilite": "CVE-2026-113782",
+      "alias": [
+        "GHSA-c26h-gm53-qg83"
+      ],
+      "composant": "esp-idf",
+      "version": "6.0.2",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Exposé seulement avec CONFIG_OPENTHREAD_BORDER_ROUTER=y ; OpenThread est désactivé (Wi-Fi seul), le Border Router n'est pas compilé",
+      "issue": "dev#4157",
+      "date": "2026-10-30"
+    },
+    {
+      "vulnerabilite": "CVE-2026-113780",
+      "alias": [
+        "GHSA-49x8-xqjg-2pjg"
+      ],
+      "composant": "esp-idf",
+      "version": "6.0.2",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Plage affectée v6.0.3 à v6.0.4, avec ESP-TEE activé ; v6.0.2 est hors plage et CONFIG_SECURE_ENABLE_TEE n'est pas posé",
+      "issue": "dev#4156",
+      "date": "2026-10-30"
+    },
+    {
+      "vulnerabilite": "CVE-2026-119086",
+      "alias": [
+        "GHSA-56j9-g43f-8g6v"
+      ],
+      "composant": "freertos",
+      "version": "10.5.1",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
+      "motif": "Exige une tâche non privilégiée sous MPU wrappers ; portUSING_MPU_WRAPPERS=0 sur le portage RISC-V, et ThreadPod OS n'appelle pas xQueueSelectFromSet, dont le handle ne vient que du firmware",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-112062",
+      "alias": [
+        "EUVD-2026-103504"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "mdns_handle_response() vit dans src/apps/mdns/mdns.c, absent de la liste de sources du composant lwip de l'IDF v6.0.2 ; LWIP_MDNS_RESPONDER n'est pas posé",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-119053",
+      "alias": [
+        "EUVD-2026-112819"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "snmp_pbuf_stream_writeto() vit dans src/apps/snmp/, absent de la liste de sources du composant lwip de l'IDF v6.0.2 ; LWIP_SNMP n'est pas posé",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-8836",
+      "alias": [
+        "EUVD-2026-30793"
+      ],
+      "composant": "lwip",
+      "version": "2.2.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "snmp_parse_inbound_frame() vit dans src/apps/snmp/snmp_msg.c, absent de la liste de sources du composant lwip de l'IDF v6.0.2 ; LWIP_SNMP n'est pas posé",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-115488",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Exige MBEDTLS_SSL_VARIABLE_BUFFER_LENGTH et un serveur TLS ; CONFIG_MBEDTLS_SSL_VARIABLE_BUFFER_LENGTH n'est pas posé, handle_buffer_resizing() n'est pas compilé, et aucun serveur TLS n'est instancié",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-115490",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Exige MBEDTLS_SSL_PROTO_TLS1_2 et MBEDTLS_SSL_PROTO_TLS1_3 ensemble ; CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 n'est pas posé, la machine d'état TLS 1.3 n'est pas compilée (mbedtls_ssl_tls13_handshake_client_step absent de l'ELF)",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-115491",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Serveur TLS 1.3 avec MBEDTLS_SSL_EARLY_DATA ; ni CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 ni CONFIG_MBEDTLS_SSL_EARLY_DATA ne sont posés",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-116375",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Serveur TLS 1.3 avec rappel SNI ; CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 n'est pas posé et mbedtls_ssl_conf_sni n'est pas lié",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-50580",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Client TLS 1.2 ECDHE-PSK ; CONFIG_MBEDTLS_PSK_MODES et CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_PSK ne sont pas posés, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED n'est pas défini et mbedtls_ssl_conf_psk n'est pas lié",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-50581",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
+      "motif": "MBEDTLS_PSA_ASSUME_EXCLUSIVE_BUFFERS est posé (esp_config.h:60), l'avis ne laisse donc que la perte d'unicité du secret maître, qui n'atteint qu'un protocole lié à ce secret ; aucun n'est au produit (ni EAP-TLS, ni export de clés : mbedtls_ssl_set_export_keys_cb absent de l'ELF)",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-50586",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "motif": "Serveur TLS 1.2 émettant des tickets ; le seul appelant de mbedtls_ssl_config_defaults est le client esp-tls (MBEDTLS_SSL_IS_CLIENT), et mbedtls_ssl_conf_session_tickets_cb comme mbedtls_ssl_ticket_write sont absents de l'ELF",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-50588",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Exige MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED ; CONFIG_MBEDTLS_KEY_EXCHANGE_ECJPAKE n'est pas posé, la macro n'est pas définie",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-50640",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Serveur TLS 1.3 ; CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 n'est pas posé",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-73064",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Serveur TLS 1.3 émettant des tickets ; CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 n'est pas posé, l'avis exclut TLS 1.2",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-73096",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Early data TLS 1.3 côté serveur ; ni CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 ni CONFIG_MBEDTLS_SSL_EARLY_DATA ne sont posés",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-90471",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "requires_configuration",
+      "motif": "Ne contourne qu'une restriction de courbes posée par mbedtls_ssl_conf_groups() ; aucun code ne l'appelle (absent de l'ELF), les courbes admises sont celles de la configuration de build",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-93776",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "motif": "Serveur TLS à hôtes virtuels par SNI ; aucun serveur TLS n'est instancié (seul set_client_config d'esp-tls appelle mbedtls_ssl_config_defaults) et ni mbedtls_ssl_conf_sni ni le cache de sessions ne sont liés",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-93777",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "motif": "Serveur TLS 1.2 restreignant les signatures du client ; aucun serveur TLS n'est instancié et mbedtls_ssl_conf_sig_algs n'est pas lié",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-93831",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Serveur TLS 1.2 et 1.3 acceptant des tickets ; CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 n'est pas posé, aucun ticket TLS 1.3 n'existe, et aucun serveur TLS n'est instancié",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-93843",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Mise en place d'un transform TLS 1.3 ; CONFIG_MBEDTLS_SSL_PROTO_TLS1_3 n'est pas posé",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-93844",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Exige MBEDTLS_SSL_VARIABLE_BUFFER_LENGTH ; CONFIG_MBEDTLS_SSL_VARIABLE_BUFFER_LENGTH n'est pas posé, handle_buffer_resizing() n'est pas compilé (les quatre autres conditions sont réunies : renégociation et MFL compilées et activées)",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2025-27809",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Plage relue à l'avis : Mbed TLS jusqu'à 3.6.2 ; 4.1.0 refuse la vérification sans nom (MBEDTLS_ERR_SSL_CERTIFICATE_VERIFICATION_WITHOUT_HOSTNAME, library/ssl_tls.c:8688), et esp-tls appelle mbedtls_ssl_set_hostname, skip_common_name n'étant jamais posé",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "MBEDTLS-2020-09-3",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "Vise l'échange DHE-PSK, retiré de Mbed TLS 4.0 (library/mbedtls_config_check_user.h:748, ChangeLog « Remove support for the DHE-PSK key exchange in TLS 1.2 »)",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-115489",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "mbedtls_x509_dn_gets() n'est appelée par aucun code du binaire ; elle est absente de l'ELF",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-49300",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
+      "motif": "L'avis n'affecte qu'une application qui accepte un certificat directement d'un tiers non fiable ; le module n'accepte qu'une chaîne ancrée au bundle d'autorités ou à une ancre privée compilée, vérifiée par Mbed TLS lui-même, et n'enregistre aucune racine venue du réseau",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-50579",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "mbedtls_pkcs7_free() n'est appelée par aucun code du binaire ; aucun symbole mbedtls_pkcs7_* n'est dans l'ELF",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-90470",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_cannot_be_controlled_by_adversary",
+      "motif": "N'affecte qu'un nom attendu qui n'est pas un nom DNS ; le nom passé à mbedtls_ssl_set_hostname est toujours l'hôte d'une URL ou le common_name fixe de la box Overkiz, un nom DNS ou une adresse IP",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-90475",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "L'ajout d'une CRL vit dans mbedtls_x509_crl_parse_der(), absente de l'ELF ; aucun symbole mbedtls_x509_crl_* n'est lié",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "MBEDTLS-2026-07-pkcs7-weak-hash-algorithms-accepted",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_present",
+      "motif": "mbedtls_pkcs7_signed_data_verify() et mbedtls_pkcs7_signed_hash_verify() ne sont appelées par aucun code du binaire ; aucun symbole mbedtls_pkcs7_* n'est dans l'ELF",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    },
+    {
+      "vulnerabilite": "CVE-2026-116462",
+      "composant": "mbed_tls",
+      "version": "4.1.0",
+      "statut": "non_affecte",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "motif": "Ne joue qu'à la vérification d'une CRL ; aucune CRL n'est chargée (ni mbedtls_x509_crl_parse ni mbedtls_x509_crl_init dans l'ELF), et mbedtls_ssl_conf_ca_chain reçoit toujours une CRL nulle",
+      "issue": "dev#5088",
+      "date": "2026-11-21"
+    }
+  ],
+  "couverture": {
+    "avec_cpe": [
+      "cJSON",
+      "component-chip",
+      "esp-idf",
+      "freertos",
+      "lwip",
+      "mbed_tls",
+      "micro-ecc",
+      "tf-psa-crypto"
+    ],
+    "commit_seul": [
+      "component-app_update",
+      "component-bootloader",
+      "component-bootloader_support",
+      "component-cxx",
+      "component-efuse",
+      "component-esp-tls",
+      "component-esp_app_format",
+      "component-esp_coex",
+      "component-esp_common",
+      "component-esp_driver_dma",
+      "component-esp_driver_gpio",
+      "component-esp_driver_i2c",
+      "component-esp_driver_rmt",
+      "component-esp_driver_spi",
+      "component-esp_driver_tsens",
+      "component-esp_driver_uart",
+      "component-esp_driver_usb_serial_jtag",
+      "component-esp_eth",
+      "component-esp_event",
+      "component-esp_hal_ana_conv",
+      "component-esp_hal_clock",
+      "component-esp_hal_dma",
+      "component-esp_hal_gpio",
+      "component-esp_hal_gpspi",
+      "component-esp_hal_i2c",
+      "component-esp_hal_mspi",
+      "component-esp_hal_pmu",
+      "component-esp_hal_rmt",
+      "component-esp_hal_security",
+      "component-esp_hal_uart",
+      "component-esp_hal_wdt",
+      "component-esp_http_client",
+      "component-esp_http_server",
+      "component-esp_hw_support",
+      "component-esp_matter",
+      "component-esp_mm",
+      "component-esp_netif",
+      "component-esp_partition",
+      "component-esp_phy",
+      "component-esp_pm",
+      "component-esp_ringbuf",
+      "component-esp_rom",
+      "component-esp_security",
+      "component-esp_stdio",
+      "component-esp_system",
+      "component-esp_timer",
+      "component-esp_wifi",
+      "component-espcoredump",
+      "component-espressif__cjson",
+      "component-espressif__led_strip",
+      "component-espressif__mdns",
+      "component-freertos",
+      "component-hal",
+      "component-heap",
+      "component-log",
+      "component-lwip",
+      "component-mbedtls",
+      "component-nvs_flash",
+      "component-nvs_sec_provider",
+      "component-partition_table",
+      "component-pthread",
+      "component-riscv",
+      "component-soc",
+      "component-spi_flash",
+      "component-tcp_transport",
+      "component-vfs",
+      "esp_libc",
+      "HTTP Parser",
+      "project-threadpod-tpc",
+      "submodule-esp_coex-lib",
+      "submodule-esp_phy-lib",
+      "submodule-esp_wifi-lib",
+      "submodule-heap-tlsf"
+    ],
+    "sans_identifiant": [
+      "picolib",
+      "threadpod-hal",
+      "threadpod-mbedtls-crt-bundle",
+      "threadpod-os",
+      "threadpod-wpa-supplicant",
+      "toolchain-riscv32-esp-elf"
+    ],
+    "verifies_nvd": [
+      "cJSON",
+      "component-chip",
+      "esp-idf",
+      "freertos",
+      "lwip",
+      "mbed_tls",
+      "micro-ecc",
+      "tf-psa-crypto"
+    ]
+  },
+  "retrait": {
+    "retires": [
+      {
+        "paquet": "Apache Mynewt Nimble",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "argtable3",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-app_trace",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-bt",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-cmock",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-console",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-driver",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_adc",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_blockdev",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_blockdev_util",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_bootloader_format",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_ana_cmpr",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_bitscrambler",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_cam",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_dac",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_gptimer",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_i2s",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_i3c",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_isp",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_jpeg",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_ledc",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_mcpwm",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_parlio",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_pcnt",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_ppa",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_sd_intf",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_sdio",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_sdm",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_sdmmc",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_sdspi",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_touch_sens",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_driver_twai",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_gdbstub",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_ana_cmpr",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_cam",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_i2s",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_ieee802154",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_jpeg",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_lcd",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_ledc",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_mcpwm",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_parlio",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_pcnt",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_ppa",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_rtc_timer",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_sd",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_timg",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_touch_sens",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_twai",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hal_usb",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_hid",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_https_ota",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_https_server",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_lcd",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_local_ctrl",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_matter_bridge",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_matter_console",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_matter_controller",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_matter_ota_provider",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_matter_rainmaker",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_netif_stack",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_psram",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_tee",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_trace",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esp_usb_cdc_rom_console",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-espressif__esp_delta_ota",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-espressif__esp_encrypted_img",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-espressif__esp_secure_cert_mgr",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-esptool_py",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-idf_test",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-ieee802154",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-protobuf-c",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-protocomm",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-sdmmc",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-spiffs",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-ulp",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-unity",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "component-wear_levelling",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "FatFs",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "FreeRTOS-Plus-POSIX",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "openthread",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "openthread component",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "protobuf-c",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-controller/lib_esp32",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-controller/lib_esp32c2/esp32c2-bt-lib",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-controller/lib_esp32c3_family",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-controller/lib_esp32c5/esp32c5-bt-lib",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-controller/lib_esp32c6/esp32c6-bt-lib",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-controller/lib_esp32h2/esp32h2-bt-lib",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-bt-esp_ble_mesh/lib/lib",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-cmock-CMock",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-cmock-CMock-vendor/c_exception",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-cmock-CMock-vendor/unity",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-openthread-lib",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-openthread-openthread-third_party/mbedtls/repo",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-openthread-openthread-third_party/mbedtls/repo-framework",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-spiffs-spiffs",
+        "motif": "non lié au binaire selon l'outil et la map"
+      },
+      {
+        "paquet": "submodule-unity-unity",
+        "motif": "non lié au binaire selon l'outil et la map"
+      }
+    ],
+    "gardes_contre_outil": [
+      {
+        "paquet": "component-bootloader",
+        "motif": "Le second étage de démarrage est livré dans l'image -full.bin, hors de la map de l'application"
+      },
+      {
+        "paquet": "component-chip",
+        "motif": "lié au binaire : esp-idf/chip/lib/libCHIP.a dans la map"
+      },
+      {
+        "paquet": "component-partition_table",
+        "motif": "La table de partitions est livrée dans l'image -full.bin, hors de la map de l'application"
+      },
+      {
+        "paquet": "micro-ecc",
+        "motif": "porté par component-bootloader, gardé"
+      },
+      {
+        "paquet": "threadpod-mbedtls-crt-bundle",
+        "motif": "composant ThreadPod (components/mbedtls_crt_bundle) : son code compile dans un autre composant"
+      }
+    ],
+    "ecarts_registre": []
+  }
+}
